@@ -1,18 +1,18 @@
 [
   {
     "Id": 1,
-    "Name": "Boards"
+    "Name": "FlashDisk"
   },
   {
     "Id": 2,
-    "Name": "Hats"
+    "Name": "Memory"
   },
   {
     "Id": 3,
-    "Name": "Boots"
+    "Name": "HardDisk"
   },
   {
     "Id": 4,
-    "Name": "Gloves"
+    "Name": "Laptop"
   }
 ]
