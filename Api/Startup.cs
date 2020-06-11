@@ -3,6 +3,7 @@ using Api.Errors;
 using Api.Extensions;
 using Api.Helpers;
 using Api.Middleware;
+using API.Extensions;
 using AutoMapper;
 using Core.Interfaces;
 using Infrastructure.Data;
@@ -50,7 +51,7 @@ namespace Api
             });
 
             services.AddApplicationServices();
-            services.AddIdentityService();
+            services.AddIdentityServices(_config);
             services.AddSwaggerDocumentation();
             
 
@@ -84,8 +85,8 @@ namespace Api
             app.UseHttpsRedirection();  
             app.UseRouting();
             app.UseStaticFiles();
-            
 
+            app.UseAuthentication();
             app.UseAuthorization();
             app.UseSwaggerDocumentation();
             app.UseEndpoints(endpoints =>
