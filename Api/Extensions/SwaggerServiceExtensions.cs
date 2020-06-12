@@ -14,20 +14,33 @@ namespace Api.Extensions
         {
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("V1", new OpenApiInfo
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "GoTrade API", Version = "v1" });
+
+                var securitySchema = new OpenApiSecurityScheme
                 {
-                    Title = "GoTrade Api",
-                    Version = "v1"
-                });
+                    Description = "JWT Auth Bearer Scheme",
+                    Name = "Authorization",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "bearer",
+                    Reference = new OpenApiReference
+                    {
+                        Type = ReferenceType.SecurityScheme,
+                        Id = "Bearer"
+                    }
+                };
+
+                c.AddSecurityDefinition("Bearer", securitySchema);
+                var securityRequirement = new OpenApiSecurityRequirement { { securitySchema, new[] { "Bearer" } } };
+                c.AddSecurityRequirement(securityRequirement);
                 c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
             });
+
             return services;
         }
         public static IApplicationBuilder UseSwaggerDocumentation(this IApplicationBuilder app)
         {
-            app.UseSwagger(c => {
-                c.RouteTemplate = "/swagger/v1/swagger.json";
-            });
+            app.UseSwagger();
             app.UseSwaggerUI(c => {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "GoTrade Api V1");
                 
@@ -35,5 +48,6 @@ namespace Api.Extensions
             });
             return app;
         }
+        
     }
 }
