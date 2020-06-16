@@ -1,7 +1,7 @@
 [
   {
     "Name": "Acer",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Description": "this is A description of a product related to GoTrade E-Commerce System",
     "Price": 200,
     "PictureUrl": "images/products/1.png",
     "ProductTypeId": 1,
@@ -9,7 +9,7 @@
   },
   {
     "Name": "Dell",
-    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
+    "Description": "this is A description of a product related to GoTrade E-Commerce System",
     "Price": 150,
     "PictureUrl": "images/products/2.png",
     "ProductTypeId": 1,
@@ -17,7 +17,7 @@
   },
   {
     "Name": "hp",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+    "Description": "this is A description of a product related to GoTrade E-Commerce System.",
     "Price": 180,
     "PictureUrl": "images/products/3.png",
     "ProductTypeId": 1,
@@ -25,7 +25,7 @@
   },
   {
     "Name": "Omen",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+    "Description": "this is A description of a product related to GoTrade E-Commerce System.",
     "Price": 300,
     "PictureUrl": "images/products/5.png",
     "ProductTypeId": 1,
@@ -33,7 +33,7 @@
   },
   {
     "Name": "Apple",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Description": "this is A description of a product related to GoTrade E-Commerce System.",
     "Price": 250,
     "PictureUrl": "images/products/6.png",
     "ProductTypeId": 1,
@@ -41,7 +41,7 @@
   },
   {
     "Name": "Memory",
-    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
+    "Description": "this is A description of a product related to GoTrade E-Commerce System",
     "Price": 120,
     "PictureUrl": "images/products/7.png",
     "ProductTypeId": 1,
